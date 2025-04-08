@@ -6,9 +6,9 @@ function DestinationCard({ destination }) {
     <div className="destination-card">
       <img src={destination.image} alt={destination.name} />
       <h3>{destination.name}</h3>
-      <p>{destination.location}</p>
-      <p>{destination.description}</p>
-      <p><strong>{destination.price}</strong></p>
+      <p className="location">{destination.location}</p>
+      <p className="description">{destination.description}</p>
+      <p className="price"><strong>{destination.price}</strong></p>
     </div>
   );
 }
